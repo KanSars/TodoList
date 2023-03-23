@@ -1,0 +1,13 @@
+li {
+    list-style-type: none; /* Убираем маркеры */
+
+    margin-bottom: 5px;
+
+    border: 1px solid grey;
+    border-radius: 5px;
+   }
+
+ul {
+margin-left: 0; /* Отступ слева в браузере IE и Opera */
+padding-left: 0; /* Отступ слева в браузере Firefox, Safari, Chrome */
+}

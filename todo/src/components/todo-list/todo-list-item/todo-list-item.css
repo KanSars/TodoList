@@ -1,0 +1,34 @@
+.item-container {
+    display: flex;
+    justify-content: space-between;
+
+    padding: 5px;
+}
+
+.todo-list-item {
+}
+
+.done {
+    text-decoration:line-through;
+}
+
+.important {
+    font-weight: bold;
+}
+
+.buttons-container {
+    display: flex;
+}
+
+.button {
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-left: 2px;
+    padding: 2px;
+}
+
+.button-del {
+}
+
+.button-important {
+}

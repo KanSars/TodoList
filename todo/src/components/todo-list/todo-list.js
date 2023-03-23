@@ -1,17 +1,23 @@
 import React from "react";
+import './todo-list.css'
 import TodoListItem from "./todo-list-item/todo-list-item";
 
-const TodoList = () => {
-    const state = [
-        {id: 1, label: 'Drink cofee', important: false},
-        {id: 2, label: 'todo App', important: false},
-        {id: 3, label: 'meditate', important: true},
-    ]
+const TodoList = ({ todos }) => {
+
+    const elements = todos.map((item) => {
+        return (
+            <li key={item.id}>
+                <TodoListItem 
+                    id={item.id}
+                    label={item.label} 
+                    important={item.important}
+                />
+            </li>);
+    });
+
     return (
         <ul>
-            <li><TodoListItem label={state[0].label}/></li>
-            <li><TodoListItem label={state[1].label}/></li>
-            <li><TodoListItem label={state[2].label}/></li>
+            { elements }
         </ul>
     )
 }
